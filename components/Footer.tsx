@@ -111,7 +111,7 @@ export default function Footer() {
               Belagavi, Karnataka 590011
             </p>
             <p className="font-manrope text-xs font-semibold text-gold">
-              Hotline: <a href="tel:08050615011" class="hover:underline">08050615011</a>
+              Hotline: <a href="tel:08050615011" className="hover:underline">08050615011</a>
             </p>
             <div className="pt-2 flex flex-col space-y-1 font-manrope text-[10px] text-white/45">
               <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

@@ -70,7 +70,7 @@ export default function Header() {
         </nav>
 
         {/* CTA Button */}
-        <div class="hidden lg:block">
+        <div className="hidden lg:block">
           <Link
             href="/contact"
             className="bg-gold hover:bg-goldhover text-primary font-manrope text-xs font-semibold uppercase tracking-widest px-6 py-3 rounded-none transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg border border-gold hover:border-goldhover"

@@ -275,7 +275,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
             <div className="space-y-4">
               <span className="font-manrope text-[10px] md:text-xs font-bold tracking-[0.4em] text-walnut uppercase block">Core Specializations</span>
-              <h2 class="font-cormorant text-4xl md:text-5xl font-light text-primary leading-tight">Custom Services Crafted to Perfection</h2>
+              <h2 className="font-cormorant text-4xl md:text-5xl font-light text-primary leading-tight">Custom Services Crafted to Perfection</h2>
             </div>
             <Link href="/services" className="font-manrope text-xs font-bold uppercase tracking-widest text-gold hover:text-primary transition-all">
               View All Services →
