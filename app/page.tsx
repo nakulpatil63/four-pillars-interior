@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Star, ShieldCheck, Compass, Calendar, Wrench, Layers, Gem, ArrowUpRight, ChefHat, Monitor, Sofa, Bed, Sun, Users, Package, Eye, ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import { Star, ShieldCheck, Compass, Calendar, Wrench, Layers, Gem, ArrowUpRight, ChefHat, Monitor, Sofa, Bed, Sun, Users, Package, Eye, ArrowRight, CheckCircle2, ChevronDown, Phone } from "lucide-react";
 
 export default function Home() {
   // Stats Counters
