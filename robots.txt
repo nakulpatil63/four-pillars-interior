@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fourpillarsinterior.com/sitemap.xml

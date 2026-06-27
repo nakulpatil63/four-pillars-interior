@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Four Pillars Interior - Premium Style Sheet
+   ========================================================================== */
+
+/* 1. Global Reset & Core Styling */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Selection Highlight */
+::selection {
+    background-color: #C8A34D;
+    color: #111111;
+}
+
+/* 2. Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+::-webkit-scrollbar-thumb {
+    background: #7B4B2A;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #C8A34D;
+}
+
+/* 3. Custom Cursor Glow (Desktop Only) */
+#cursor-glow {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(200, 163, 77, 0.08) 0%, rgba(200, 163, 77, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    transition: transform 0.1s ease-out, background 0.3s ease;
+}
+
+/* Interactive Cursor Expansion */
+body.hovering-interactive #cursor-glow {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(200, 163, 77, 0.12) 0%, rgba(200, 163, 77, 0) 70%);
+}
+
+/* 4. Luxury Sticky Header */
+.glass-header {
+    background-color: rgba(17, 17, 17, 0.9) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #C8A34D;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active-nav::after {
+    width: 100%;
+    left: 0;
+}
+
+/* 5. Custom Loading Screen Animations */
+#loader-logo {
+    animation: luxuryPulse 2s infinite ease-in-out alternate;
+}
+
+@keyframes luxuryPulse {
+    0% {
+        opacity: 0.7;
+        letter-spacing: 0.22em;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 0.28em;
+    }
+}
+
+/* 6. Why Choose Us Premium Cards */
+.why-card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(200, 163, 77, 0.3);
+}
+
+/* 7. Service Cards Custom Zoom */
+.service-card {
+    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+/* 8. Portfolio Item Hover Zoom Effect */
+.portfolio-item img {
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.08);
+}
+
+.filter-btn {
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active-filter {
+    background-color: #111111;
+    color: #C8A34D;
+    border-color: #111111;
+}
+
+/* 9. Timeline custom items styling */
+.process-step-item {
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.process-step-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 10. FAQ Accordion Transition */
+.faq-item {
+    transition: border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(200, 163, 77, 0.4);
+}
+
+.faq-btn[aria-expanded="true"] .faq-icon-wrapper {
+    transform: rotate(45deg);
+}
+
+.faq-btn[aria-expanded="true"] {
+    color: #C8A34D;
+}
+
+/* 11. Custom Forms Validation Styling */
+input:invalid, select:invalid {
+    box-shadow: none;
+}
+
+.form-error-msg {
+    transition: opacity 0.3s ease;
+}
+
+/* 12. Text Reveal animations and helpers */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.fade-up-item {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+}
